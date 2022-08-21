@@ -29,9 +29,7 @@ def get_count():
   return delta.days
 
 def get_birthday():
-  next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
-  if next < datetime.now():
-    next = next.replace(year=next.year + 1)
+  next = datetime.strptime("2023-01-28")
   return (next - today).days
 
 def get_words():
