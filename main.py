@@ -25,11 +25,11 @@ def get_weather():
   return weather['weather'], math.floor(weather['temp'])
 
 def get_count():
-  delta = today - datetime.strptime(start_date, "%Y-%m-%d")
+  delta = today - datetime.strptime("2022-07-14", "%Y-%m-%d")
   return delta.days
 
 def get_birthday():
-  next = datetime.strptime("2023-01-28")
+  next = datetime.strptime("2023-01-28", "%Y-%m-%d")
   return (next - today).days
 
 def get_words():
